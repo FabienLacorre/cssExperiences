@@ -1,13 +1,18 @@
 import React from "react";
 import {
   titleStyle,
-  titleContainerStyle,
+  terminalContainerStyle,
   keyframesFade,
-  titleBorderStyle,
+  terminalBorderStyle,
   keyframesBorder,
-  insideTitleContainer
+  insideTerminalStyle,
+  contentStyle,
+  headerTerminalStyle,
+  terminalTitleStyle,
+  lineContainer
 } from "../style/HeaderStyle";
 import { text } from "../text/fr";
+import Loader from "./Loader";
 
 class Header extends React.Component {
   render() {
@@ -15,10 +20,24 @@ class Header extends React.Component {
     styleSheet.insertRule(keyframesFade, styleSheet.cssRules.length);
     styleSheet.insertRule(keyframesBorder, styleSheet.cssRules.length);
     return (
-      <div className="titleAnimation" style={titleContainerStyle}>
-        <div style={titleBorderStyle}>
-          <div style={insideTitleContainer}>
-            <span style={titleStyle}>{text.title}</span>
+      <div className="titleAnimation" style={terminalContainerStyle}>
+        <div style={terminalBorderStyle}>
+          <div style={headerTerminalStyle}>
+            <span style={terminalTitleStyle}>Ubuntu 20.04</span>
+          </div>
+          <div style={insideTerminalStyle}>
+            <div style={contentStyle}>
+              <div style={lineContainer}>
+                <span style={titleStyle}>{text.pointer}</span>
+                <span style={titleStyle}>{text.title}</span>
+              </div>
+              <div style={lineContainer}>
+                <span style={titleStyle}>{text.pointer}</span>
+                <span style={titleStyle}>{text.initialization}</span>
+                <Loader></Loader>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>

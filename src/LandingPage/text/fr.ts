@@ -1,3 +1,5 @@
 export const text = {
-    title: "$: _ FABIEN LACORRE - FULL STACK DEVELOPER",
+    pointer: "$: ",
+    title: "FABIEN LACORRE - FULL STACK DEVELOPER",
+    initialization: "Initialization"
 };
