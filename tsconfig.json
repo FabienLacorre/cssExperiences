@@ -1,0 +1,58 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "ES6",
+    "lib": [
+      "ES2017",
+      "ES2015",
+      "dom",
+      "dom.iterable",
+      "esnext.asynciterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "pretty": false,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "baseUrl": "./src",
+    "rootDirs": [
+      "./src",
+      "./stories"
+    ],
+    "outDir": "./build",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "stories/**/*.tsx",
+    "src/index.js"
+  ],
+  "exclude": [
+    ".eslintrc.js",
+    "node_modules"
+  ],
+  "filesGlob": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "files": [
+    "./src/index.js"
+  ]
+}
